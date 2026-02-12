@@ -1,0 +1,19 @@
+⚠️ REPLACE THIS FILE WITH YOUR ACTUAL LOGO
+
+This is a placeholder. Add your logo image here with the name:
+- logo-placeholder.png (recommended)
+- OR any other name (but update index.html line 69 with the new path)
+
+Recommended specifications:
+- Size: 300x200px or similar aspect ratio
+- Format: PNG (with transparency) or JPG
+- File size: Under 200KB
+
+This logo will appear on the Home page between:
+- "SEGULLAH PROJECTS & DESIGNS" (title)
+- "Strategic Branding, Signage & Visual Communication" (subtitle)
+
+To replace:
+1. Delete or rename this .txt file
+2. Add your logo image as: logo-placeholder.png
+3. Upload to GitHub or add to this folder before deploying

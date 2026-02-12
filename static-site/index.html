@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segullah Branding Agency Website</title>
+    <meta property="og:image" content="https://bolt.new/static/og_default.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="nav" class="nav">
+        <div class="nav-container">
+            <a href="#/" class="nav-brand">
+                <img src="./assets/images/segu.jpg" alt="Segullah Logo" class="nav-logo">
+                <div class="nav-brand-text">
+                    <div class="nav-title">SEGULLAH</div>
+                    <div class="nav-subtitle">Building Brands To Prosper</div>
+                </div>
+            </a>
+
+            <div class="nav-links">
+                <a href="#/" class="nav-link" data-page="home">Home</a>
+                <a href="#/about" class="nav-link" data-page="about">About</a>
+                <a href="#/services" class="nav-link" data-page="services">Services</a>
+                <a href="#/process" class="nav-link" data-page="process">Process</a>
+                <a href="#/contact" class="nav-link" data-page="contact">Contact</a>
+            </div>
+
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <svg class="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+                <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#/" class="mobile-menu-link" data-page="home">Home</a>
+            <a href="#/about" class="mobile-menu-link" data-page="about">About</a>
+            <a href="#/services" class="mobile-menu-link" data-page="services">Services</a>
+            <a href="#/process" class="mobile-menu-link" data-page="process">Process</a>
+            <a href="#/contact" class="mobile-menu-link" data-page="contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main id="app"></main>
+
+    <!-- Templates for each page -->
+    <template id="home-template">
+        <section class="hero-section">
+            <div class="hero-background"></div>
+            <div class="hero-overlay"></div>
+            <div class="hero-blur-effects">
+                <div class="blur-circle blur-top-left"></div>
+                <div class="blur-circle blur-bottom-right"></div>
+            </div>
+
+            <div class="hero-content">
+                <div class="hero-text-wrapper fade-in">
+                    <div class="hero-line"></div>
+
+                    <h1 class="hero-title">
+                        SEGULLAH<br>
+                        <span class="hero-title-white">PROJECTS & DESIGNS</span>
+                    </h1>
+
+                    <!-- Logo Placeholder -->
+                    <div class="hero-logo-placeholder">
+                        <img src="./assets/images/logo-placeholder.png" alt="Segullah Logo" class="hero-logo-image">
+                        <!-- Replace 'logo-placeholder.png' with your actual logo file -->
+                    </div>
+
+                    <p class="hero-subtitle">
+                        Strategic Branding, Signage & Visual Communication
+                    </p>
+
+                    <p class="hero-description">
+                        Custom indoor and outdoor signage, branding solutions, and visual
+                        communication systems that elevate business visibility.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#/services" class="btn btn-primary">
+                            <span>View Our Services</span>
+                            <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#/contact" class="btn btn-secondary">Get a Quote</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="footer-logo-section">
+                        <img src="./assets/images/segu.jpg" alt="Segullah Projects & Designs Logo" class="footer-logo">
+                    </div>
+                    <div class="footer-info-section">
+                        <h3 class="footer-title">Segullah Projects & Designs</h3>
+                        <p class="footer-tagline">Strategic Branding, Signage & Visual Communication</p>
+
+                        <div class="footer-leadership">
+                            <h3 class="footer-section-title">Leadership</h3>
+                            <p class="footer-text">CEO: Eugene Mudila</p>
+                            <p class="footer-text">Director: Chama Bwalya</p>
+                        </div>
+
+                        <div class="footer-contact">
+                            <h3 class="footer-section-title">Contact & Locations</h3>
+                            <p class="footer-text">Pretoria: <a href="tel:+27662222656" class="footer-link">066 222 2656</a></p>
+                            <p class="footer-text">Johannesburg: <a href="tel:+27604563045" class="footer-link">060 456 3045</a></p>
+                            <p class="footer-text">Lusaka, Zambia: <a href="tel:+260978079443" class="footer-link">+260 97 807 9443</a></p>
+                        </div>
+
+                        <div class="footer-location">
+                            <p class="footer-location-text">Greenhills, Randfontein, South Africa</p>
+                            <p class="footer-text"><a href="mailto:info@segullah.co.za" class="footer-link">info@segullah.co.za</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="footer-copyright">
+                        <p class="footer-copyright-text">© 2024 Segullah Projects & Designs. All rights reserved.</p>
+                        <p class="footer-copyright-subtext">Strategic Branding, Signage & Visual Communication</p>
+                    </div>
+                    <div class="footer-nav">
+                        <a href="#/" class="footer-nav-link">Home</a>
+                        <a href="#/about" class="footer-nav-link">About</a>
+                        <a href="#/services" class="footer-nav-link">Services</a>
+                        <a href="#/process" class="footer-nav-link">Process</a>
+                        <a href="#/contact" class="footer-nav-link">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </template>
+
+    <template id="about-template">
+        <section class="page-section about-page">
+            <!-- Video Section - Immediately Captivating -->
+            <div class="about-video-container">
+                <video class="about-video" autoplay loop muted playsinline>
+                    <source src="./assets/videos/segulavid.mp4" type="video/mp4">
+                    <!-- Add your video file as 'segulavid.mp4' in assets/videos/ folder -->
+                    Your browser does not support the video tag.
+                </video>
+                <div class="about-video-overlay">
+                    <h1 class="about-video-title fade-in">Welcome to Segullah</h1>
+                </div>
+            </div>
+
+            <!-- About Content -->
+            <div class="container about-content">
+                <div class="about-grid">
+                    <div class="about-text slide-in-left">
+                        <div class="section-line"></div>
+                        <h2 class="section-title">
+                            About Segullah<br>
+                            Projects & Designs
+                        </h2>
+
+                        <div class="about-description">
+                            <p class="text-lg">
+                                Based in <span class="text-highlight">Greenhills, Randfontein, South Africa</span>, we are a professional signage and branding company serving local and regional businesses.
+                            </p>
+                            <p>
+                                Focused on delivering visual communication solutions that strengthen brand presence and recognition, we combine strategic thinking with creative excellence.
+                            </p>
+                            <p>
+                                Our approach transforms businesses by creating cohesive brand experiences that resonate with audiences and drive meaningful engagement.
+                            </p>
+                        </div>
+
+                        <div class="about-features">
+                            <div class="about-feature">
+                                <div class="feature-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                    </svg>
+                                </div>
+                                <p class="feature-text">Professional</p>
+                            </div>
+                            <div class="about-feature">
+                                <div class="feature-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <circle cx="12" cy="12" r="6"></circle>
+                                        <circle cx="12" cy="12" r="2"></circle>
+                                    </svg>
+                                </div>
+                                <p class="feature-text">Strategic</p>
+                            </div>
+                            <div class="about-feature">
+                                <div class="feature-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                    </svg>
+                                </div>
+                                <p class="feature-text">Collaborative</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-image-wrapper slide-in-right">
+                        <img src="./assets/images/segu.jpg" alt="Modern office workspace" class="about-image">
+                        <div class="about-image-decoration"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="footer-logo-section">
+                        <img src="./assets/images/segu.jpg" alt="Segullah Projects & Designs Logo" class="footer-logo">
+                    </div>
+                    <div class="footer-info-section">
+                        <h3 class="footer-title">Segullah Projects & Designs</h3>
+                        <p class="footer-tagline">Strategic Branding, Signage & Visual Communication</p>
+
+                        <div class="footer-leadership">
+                            <h3 class="footer-section-title">Leadership</h3>
+                            <p class="footer-text">CEO: Eugene Mudila</p>
+                            <p class="footer-text">Director: Chama Bwalya</p>
+                        </div>
+
+                        <div class="footer-contact">
+                            <h3 class="footer-section-title">Contact & Locations</h3>
+                            <p class="footer-text">Pretoria: <a href="tel:+27662222656" class="footer-link">066 222 2656</a></p>
+                            <p class="footer-text">Johannesburg: <a href="tel:+27604563045" class="footer-link">060 456 3045</a></p>
+                            <p class="footer-text">Lusaka, Zambia: <a href="tel:+260978079443" class="footer-link">+260 97 807 9443</a></p>
+                        </div>
+
+                        <div class="footer-location">
+                            <p class="footer-location-text">Greenhills, Randfontein, South Africa</p>
+                            <p class="footer-text"><a href="mailto:info@segullah.co.za" class="footer-link">info@segullah.co.za</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="footer-copyright">
+                        <p class="footer-copyright-text">© 2024 Segullah Projects & Designs. All rights reserved.</p>
+                        <p class="footer-copyright-subtext">Strategic Branding, Signage & Visual Communication</p>
+                    </div>
+                    <div class="footer-nav">
+                        <a href="#/" class="footer-nav-link">Home</a>
+                        <a href="#/about" class="footer-nav-link">About</a>
+                        <a href="#/services" class="footer-nav-link">Services</a>
+                        <a href="#/process" class="footer-nav-link">Process</a>
+                        <a href="#/contact" class="footer-nav-link">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </template>
+
+    <template id="services-template">
+        <section class="page-section services-page">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-line"></div>
+                    <h1 class="page-title">Our Services</h1>
+                    <p class="page-subtitle">
+                        Comprehensive branding and visual communication solutions tailored to your business needs
+                    </p>
+                </div>
+
+                <div class="services-content">
+                    <!-- Branding Solutions -->
+                    <div class="service-section slide-in-left">
+                        <div class="service-grid">
+                            <div class="service-image-wrapper">
+                                <img src="./assets/images/branding1.PNG" alt="Branding solutions showcase" class="service-image">
+                            </div>
+                            <div class="service-info">
+                                <h2 class="service-title">Branding Solutions</h2>
+                                <p class="service-description">
+                                    From web development to signage installation, we provide end-to-end branding solutions.
+                                </p>
+                                <div class="service-items-grid">
+                                    <div class="service-item">
+                                        <svg class="service-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                        </svg>
+                                        <h4 class="service-item-title">Web Development</h4>
+                                    </div>
+                                    <div class="service-item">
+                                        <svg class="service-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                                        </svg>
+                                        <h4 class="service-item-title">Website Design</h4>
+                                    </div>
+                                    <div class="service-item">
+                                        <svg class="service-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                                            <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                                            <path d="M2 2l7.586 7.586"></path>
+                                            <circle cx="11" cy="11" r="2"></circle>
+                                        </svg>
+                                        <h4 class="service-item-title">Billboard Installation</h4>
+                                    </div>
+                                    <div class="service-item">
+                                        <svg class="service-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                            <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                            <polyline points="21 15 16 10 5 21"></polyline>
+                                        </svg>
+                                        <h4 class="service-item-title">Contra Vision</h4>
+                                    </div>
+                                    <div class="service-item">
+                                        <svg class="service-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                        </svg>
+                                        <h4 class="service-item-title">Entertainment Websites</h4>
+                                    </div>
+                                    <div class="service-item">
+                                        <svg class="service-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                            <polyline points="14 2 14 8 20 8"></polyline>
+                                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                                            <polyline points="10 9 9 9 8 9"></polyline>
+                                        </svg>
+                                        <h4 class="service-item-title">DTF Printing</h4>
+                                    </div>
+                                    <div class="service-item">
+                                        <svg class="service-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                                        </svg>
+                                        <h4 class="service-item-title">Informational Websites</h4>
+                                    </div>
+                                    <div class="service-item">
+                                        <svg class="service-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="9" cy="21" r="1"></circle>
+                                            <circle cx="20" cy="21" r="1"></circle>
+                                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                                        </svg>
+                                        <h4 class="service-item-title">E-commerce Websites</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Graphic Design -->
+                    <div class="service-section slide-in-right">
+                        <div class="service-grid reverse">
+                            <div class="service-info">
+                                <h2 class="service-title">Graphic Design</h2>
+                                <p class="service-description">
+                                    Creative design solutions for all your visual communication needs.
+                                </p>
+                                <div class="service-items-grid">
+                                    <div class="service-item">
+                                        <svg class="service-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                        </svg>
+                                        <h4 class="service-item-title">Social Media Design</h4>
+                                    </div>
+                                    <div class="service-item">
+                                        <svg class="service-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M1 6v16l7-4 8 4 7-4V2l-7 4-8-4-7 4z"></path>
+                                            <line x1="8" y1="2" x2="8" y2="18"></line>
+                                            <line x1="16" y1="6" x2="16" y2="22"></line>
+                                        </svg>
+                                        <h4 class="service-item-title">Blog Graphics</h4>
+                                    </div>
+                                    <div class="service-item">
+                                        <svg class="service-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <circle cx="12" cy="12" r="6"></circle>
+                                            <circle cx="12" cy="12" r="2"></circle>
+                                        </svg>
+                                        <h4 class="service-item-title">Logo Design</h4>
+                                    </div>
+                                    <div class="service-item">
+                                        <svg class="service-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                        </svg>
+                                        <h4 class="service-item-title">Portfolios</h4>
+                                    </div>
+                                    <div class="service-item">
+                                        <svg class="service-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                            <polyline points="14 2 14 8 20 8"></polyline>
+                                        </svg>
+                                        <h4 class="service-item-title">Flyers</h4>
+                                    </div>
+                                    <div class="service-item">
+                                        <svg class="service-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                                        </svg>
+                                        <h4 class="service-item-title">Educational Materials</h4>
+                                    </div>
+                                    <div class="service-item">
+                                        <svg class="service-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                                            <line x1="1" y1="10" x2="23" y2="10"></line>
+                                        </svg>
+                                        <h4 class="service-item-title">Business Cards</h4>
+                                    </div>
+                                    <div class="service-item">
+                                        <svg class="service-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M1 6v16l7-4 8 4 7-4V2l-7 4-8-4-7 4z"></path>
+                                        </svg>
+                                        <h4 class="service-item-title">News Graphics</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-image-wrapper">
+                                <img src="./assets/images/graphic.PNG" alt="Graphic design showcase" class="service-image">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- App Development -->
+                    <div class="app-development-banner fade-in">
+                        <div class="app-dev-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                            </svg>
+                        </div>
+                        <h2 class="app-dev-title">App Development</h2>
+                        <p class="app-dev-text">Custom mobile and web applications for your business</p>
+                    </div>
+
+                    <!-- Core Services -->
+                    <div class="core-services fade-in">
+                        <h2 class="section-title-center">Core Services</h2>
+                        <div class="core-services-grid">
+                            <div class="core-service-card">
+                                <svg class="core-service-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <circle cx="12" cy="12" r="6"></circle>
+                                    <circle cx="12" cy="12" r="2"></circle>
+                                </svg>
+                                <h3 class="core-service-title">Brand Strategy & Positioning</h3>
+                                <p class="core-service-description">
+                                    Market research, competitor analysis, and positioning frameworks that define clear brand differentiation.
+                                </p>
+                            </div>
+                            <div class="core-service-card">
+                                <svg class="core-service-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="13.5" cy="6.5" r=".5"></circle>
+                                    <circle cx="17.5" cy="10.5" r=".5"></circle>
+                                    <circle cx="8.5" cy="7.5" r=".5"></circle>
+                                    <circle cx="6.5" cy="12.5" r=".5"></circle>
+                                    <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"></path>
+                                </svg>
+                                <h3 class="core-service-title">Visual Identity & Design</h3>
+                                <p class="core-service-description">
+                                    Logo creation, corporate identity systems, packaging, and marketing collateral for consistency and impact.
+                                </p>
+                            </div>
+                            <div class="core-service-card">
+                                <svg class="core-service-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                </svg>
+                                <h3 class="core-service-title">Messaging & Tone of Voice</h3>
+                                <p class="core-service-description">
+                                    Brand narratives, taglines, key messages, and editorial guidelines for clear and engaging communication.
+                                </p>
+                            </div>
+                            <div class="core-service-card">
+                                <svg class="core-service-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                </svg>
+                                <h3 class="core-service-title">Digital Branding & Experience</h3>
+                                <p class="core-service-description">
+                                    Website branding, social media identity, UX/UI consulting, and digital asset creation.
+                                </p>
+                            </div>
+                            <div class="core-service-card">
+                                <svg class="core-service-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                                    <circle cx="12" cy="13" r="4"></circle>
+                                </svg>
+                                <h3 class="core-service-title">Photography & Videography</h3>
+                                <p class="core-service-description">
+                                    Corporate photography, studio photography, product photography, and professional videography to showcase your brand with clarity and impact.
+                                </p>
+                            </div>
+                            <div class="core-service-card">
+                                <svg class="core-service-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                                </svg>
+                                <h3 class="core-service-title">Brand Roll-out & Management</h3>
+                                <p class="core-service-description">
+                                    Launch campaigns, internal brand training, and ongoing governance across all brand touchpoints.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="footer-logo-section">
+                        <img src="./assets/images/segu.jpg" alt="Segullah Projects & Designs Logo" class="footer-logo">
+                    </div>
+                    <div class="footer-info-section">
+                        <h3 class="footer-title">Segullah Projects & Designs</h3>
+                        <p class="footer-tagline">Strategic Branding, Signage & Visual Communication</p>
+
+                        <div class="footer-leadership">
+                            <h3 class="footer-section-title">Leadership</h3>
+                            <p class="footer-text">CEO: Eugene Mudila</p>
+                            <p class="footer-text">Director: Chama Bwalya</p>
+                        </div>
+
+                        <div class="footer-contact">
+                            <h3 class="footer-section-title">Contact & Locations</h3>
+                            <p class="footer-text">Pretoria: <a href="tel:+27662222656" class="footer-link">066 222 2656</a></p>
+                            <p class="footer-text">Johannesburg: <a href="tel:+27604563045" class="footer-link">060 456 3045</a></p>
+                            <p class="footer-text">Lusaka, Zambia: <a href="tel:+260978079443" class="footer-link">+260 97 807 9443</a></p>
+                        </div>
+
+                        <div class="footer-location">
+                            <p class="footer-location-text">Greenhills, Randfontein, South Africa</p>
+                            <p class="footer-text"><a href="mailto:info@segullah.co.za" class="footer-link">info@segullah.co.za</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="footer-copyright">
+                        <p class="footer-copyright-text">© 2024 Segullah Projects & Designs. All rights reserved.</p>
+                        <p class="footer-copyright-subtext">Strategic Branding, Signage & Visual Communication</p>
+                    </div>
+                    <div class="footer-nav">
+                        <a href="#/" class="footer-nav-link">Home</a>
+                        <a href="#/about" class="footer-nav-link">About</a>
+                        <a href="#/services" class="footer-nav-link">Services</a>
+                        <a href="#/process" class="footer-nav-link">Process</a>
+                        <a href="#/contact" class="footer-nav-link">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </template>
+
+    <template id="process-template">
+        <section class="page-section process-page">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <div class="section-line"></div>
+                    <h1 class="page-title">Our Process</h1>
+                    <p class="page-subtitle">
+                        A systematic approach to building brands that resonate and perform
+                    </p>
+                </div>
+
+                <div class="process-steps">
+                    <div class="process-step slide-in-left">
+                        <div class="process-number">01</div>
+                        <div class="process-icon-wrapper">
+                            <svg class="process-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                        </div>
+                        <div class="process-content">
+                            <h3 class="process-title">Discovery & Audit</h3>
+                            <p class="process-description">
+                                Understanding business objectives, market conditions, and stakeholder expectations through workshops and data analysis.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="process-step slide-in-left">
+                        <div class="process-number">02</div>
+                        <div class="process-icon-wrapper">
+                            <svg class="process-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path>
+                                <path d="M9 18h6"></path>
+                                <path d="M10 22h4"></path>
+                            </svg>
+                        </div>
+                        <div class="process-content">
+                            <h3 class="process-title">Strategy Development</h3>
+                            <p class="process-description">
+                                Creating a comprehensive branding blueprint defining positioning and messaging pillars.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="process-step slide-in-left">
+                        <div class="process-number">03</div>
+                        <div class="process-icon-wrapper">
+                            <svg class="process-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="13.5" cy="6.5" r=".5"></circle>
+                                <circle cx="17.5" cy="10.5" r=".5"></circle>
+                                <circle cx="8.5" cy="7.5" r=".5"></circle>
+                                <circle cx="6.5" cy="12.5" r=".5"></circle>
+                                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"></path>
+                            </svg>
+                        </div>
+                        <div class="process-content">
+                            <h3 class="process-title">Creative Execution</h3>
+                            <p class="process-description">
+                                Translating strategy into logos, style guides, content templates, and web designs.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="process-step slide-in-left">
+                        <div class="process-number">04</div>
+                        <div class="process-icon-wrapper">
+                            <svg class="process-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
+                                <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path>
+                                <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+                                <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+                            </svg>
+                        </div>
+                        <div class="process-content">
+                            <h3 class="process-title">Implementation & Launch</h3>
+                            <p class="process-description">
+                                Coordinated roll-out plans, onboarding support, and multi-channel launch initiatives.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="process-step slide-in-left">
+                        <div class="process-number">05</div>
+                        <div class="process-icon-wrapper">
+                            <svg class="process-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="12" y1="20" x2="12" y2="10"></line>
+                                <line x1="18" y1="20" x2="18" y2="4"></line>
+                                <line x1="6" y1="20" x2="6" y2="16"></line>
+                            </svg>
+                        </div>
+                        <div class="process-content">
+                            <h3 class="process-title">Measurement & Optimization</h3>
+                            <p class="process-description">
+                                Tracking awareness, engagement, and conversion metrics to refine and optimize brand performance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Why Segullah -->
+                <div class="why-segullah fade-in">
+                    <h2 class="section-title-center">Why Segullah Projects</h2>
+                    <div class="why-segullah-grid">
+                        <div class="why-card">
+                            <svg class="why-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="8" r="7"></circle>
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                            </svg>
+                            <h3 class="why-title">Strategic Rigor</h3>
+                            <p class="why-description">Combining analytics and creativity</p>
+                        </div>
+                        <div class="why-card">
+                            <svg class="why-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            <h3 class="why-title">Collaborative Partnerships</h3>
+                            <p class="why-description">With stakeholder involvement</p>
+                        </div>
+                        <div class="why-card">
+                            <svg class="why-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                <polyline points="2 17 12 22 22 17"></polyline>
+                                <polyline points="2 12 12 17 22 12"></polyline>
+                            </svg>
+                            <h3 class="why-title">Integrated Expertise</h3>
+                            <p class="why-description">Across branding disciplines</p>
+                        </div>
+                        <div class="why-card">
+                            <svg class="why-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                                <polyline points="17 6 23 6 23 12"></polyline>
+                            </svg>
+                            <h3 class="why-title">Measurable Results</h3>
+                            <p class="why-description">Focused on ROI and growth</p>
+                        </div>
+                        <div class="why-card">
+                            <svg class="why-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                            </svg>
+                            <h3 class="why-title">Agile Solutions</h3>
+                            <p class="why-description">Tailored to client needs</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Industries Served -->
+                <div class="industries fade-in">
+                    <h2 class="section-title-center">Industries Served</h2>
+                    <p class="industries-subtitle">
+                        Experience across industries enables adaptation of best practices to diverse market dynamics.
+                    </p>
+                    <div class="industries-grid">
+                        <div class="industry-card">
+                            <svg class="industry-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                            <p class="industry-name">Technology</p>
+                        </div>
+                        <div class="industry-card">
+                            <svg class="industry-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                            </svg>
+                            <p class="industry-name">Professional Services</p>
+                        </div>
+                        <div class="industry-card">
+                            <svg class="industry-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                            </svg>
+                            <p class="industry-name">Consumer Goods</p>
+                        </div>
+                        <div class="industry-card">
+                            <svg class="industry-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                            <p class="industry-name">Healthcare</p>
+                        </div>
+                        <div class="industry-card">
+                            <svg class="industry-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="12" y1="1" x2="12" y2="23"></line>
+                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                            </svg>
+                            <p class="industry-name">Finance</p>
+                        </div>
+                        <div class="industry-card">
+                            <svg class="industry-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                                <line x1="6" y1="1" x2="6" y2="4"></line>
+                                <line x1="10" y1="1" x2="10" y2="4"></line>
+                                <line x1="14" y1="1" x2="14" y2="4"></line>
+                            </svg>
+                            <p class="industry-name">Hospitality</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial -->
+                <div class="testimonial fade-in">
+                    <div class="testimonial-quote">"</div>
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">
+                            Working with Segullah transformed our go-to-market approach. Their strategic insights and design execution elevated our brand presence and drove a 35% increase in lead generation.
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <span class="author-initials">SP</span>
+                            </div>
+                            <div class="author-info">
+                                <p class="author-name">Sarah Patel</p>
+                                <p class="author-title">CMO, TechNova Solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="footer-logo-section">
+                        <img src="./assets/images/segu.jpg" alt="Segullah Projects & Designs Logo" class="footer-logo">
+                    </div>
+                    <div class="footer-info-section">
+                        <h3 class="footer-title">Segullah Projects & Designs</h3>
+                        <p class="footer-tagline">Strategic Branding, Signage & Visual Communication</p>
+
+                        <div class="footer-leadership">
+                            <h3 class="footer-section-title">Leadership</h3>
+                            <p class="footer-text">CEO: Eugene Mudila</p>
+                            <p class="footer-text">Director: Chama Bwalya</p>
+                        </div>
+
+                        <div class="footer-contact">
+                            <h3 class="footer-section-title">Contact & Locations</h3>
+                            <p class="footer-text">Pretoria: <a href="tel:+27662222656" class="footer-link">066 222 2656</a></p>
+                            <p class="footer-text">Johannesburg: <a href="tel:+27604563045" class="footer-link">060 456 3045</a></p>
+                            <p class="footer-text">Lusaka, Zambia: <a href="tel:+260978079443" class="footer-link">+260 97 807 9443</a></p>
+                        </div>
+
+                        <div class="footer-location">
+                            <p class="footer-location-text">Greenhills, Randfontein, South Africa</p>
+                            <p class="footer-text"><a href="mailto:info@segullah.co.za" class="footer-link">info@segullah.co.za</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="footer-copyright">
+                        <p class="footer-copyright-text">© 2024 Segullah Projects & Designs. All rights reserved.</p>
+                        <p class="footer-copyright-subtext">Strategic Branding, Signage & Visual Communication</p>
+                    </div>
+                    <div class="footer-nav">
+                        <a href="#/" class="footer-nav-link">Home</a>
+                        <a href="#/about" class="footer-nav-link">About</a>
+                        <a href="#/services" class="footer-nav-link">Services</a>
+                        <a href="#/process" class="footer-nav-link">Process</a>
+                        <a href="#/contact" class="footer-nav-link">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </template>
+
+    <template id="contact-template">
+        <section class="page-section contact-page">
+            <div class="contact-top-line"></div>
+
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info slide-in-left">
+                        <div class="section-line"></div>
+                        <h1 class="contact-title">
+                            Thank<br>
+                            <span class="contact-title-highlight">You</span>
+                        </h1>
+                        <p class="contact-subtitle">Will be great to hear from you!</p>
+                        <p class="contact-description">
+                            Ready to elevate your brand? Let's start a conversation about how we can help your business stand out and succeed.
+                        </p>
+
+                        <div class="contact-details">
+                            <div class="contact-detail">
+                                <div class="contact-detail-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="contact-detail-title">Location</h3>
+                                    <p class="contact-detail-text">
+                                        Greenhills, Randfontein<br>
+                                        South Africa
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail">
+                                <div class="contact-detail-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="contact-detail-title">Email</h3>
+                                    <p class="contact-detail-text">
+                                        <a href="mailto:info@segullah.co.za" class="contact-detail-link">info@segullah.co.za</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-logo-wrapper">
+                            <img src="./assets/images/segu.jpg" alt="Segullah Logo" class="contact-logo">
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper slide-in-right">
+                        <h2 class="contact-form-title">Start Your Project</h2>
+
+                        <div id="formSuccess" class="form-success" style="display: none;">
+                            <svg class="success-icon" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <p class="success-title">Thank you for reaching out!</p>
+                            <p class="success-text">We'll get back to you shortly.</p>
+                        </div>
+
+                        <form id="contactForm" action="https://formsubmit.co/info@segullah.co.za" method="POST" class="contact-form">
+                            <!-- FormSubmit Configuration -->
+                            <input type="hidden" name="_subject" value="New Contact Form Submission from Segullah Website">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="text" name="_honey" style="display:none">
+
+                            <div class="form-group">
+                                <label for="name" class="form-label">Name</label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    required
+                                    class="form-input"
+                                    placeholder="Your name"
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    required
+                                    class="form-input"
+                                    placeholder="your.email@example.com"
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    required
+                                    rows="6"
+                                    class="form-textarea"
+                                    placeholder="Tell us about your project..."
+                                ></textarea>
+                            </div>
+
+                            <button type="submit" class="form-submit">
+                                <span>Send Message</span>
+                                <svg class="submit-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="footer-logo-section">
+                        <img src="./assets/images/segu.jpg" alt="Segullah Projects & Designs Logo" class="footer-logo">
+                    </div>
+                    <div class="footer-info-section">
+                        <h3 class="footer-title">Segullah Projects & Designs</h3>
+                        <p class="footer-tagline">Strategic Branding, Signage & Visual Communication</p>
+
+                        <div class="footer-leadership">
+                            <h3 class="footer-section-title">Leadership</h3>
+                            <p class="footer-text">CEO: Eugene Mudila</p>
+                            <p class="footer-text">Director: Chama Bwalya</p>
+                        </div>
+
+                        <div class="footer-contact">
+                            <h3 class="footer-section-title">Contact & Locations</h3>
+                            <p class="footer-text">Pretoria: <a href="tel:+27662222656" class="footer-link">066 222 2656</a></p>
+                            <p class="footer-text">Johannesburg: <a href="tel:+27604563045" class="footer-link">060 456 3045</a></p>
+                            <p class="footer-text">Lusaka, Zambia: <a href="tel:+260978079443" class="footer-link">+260 97 807 9443</a></p>
+                        </div>
+
+                        <div class="footer-location">
+                            <p class="footer-location-text">Greenhills, Randfontein, South Africa</p>
+                            <p class="footer-text"><a href="mailto:info@segullah.co.za" class="footer-link">info@segullah.co.za</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="footer-copyright">
+                        <p class="footer-copyright-text">© 2024 Segullah Projects & Designs. All rights reserved.</p>
+                        <p class="footer-copyright-subtext">Strategic Branding, Signage & Visual Communication</p>
+                    </div>
+                    <div class="footer-nav">
+                        <a href="#/" class="footer-nav-link">Home</a>
+                        <a href="#/about" class="footer-nav-link">About</a>
+                        <a href="#/services" class="footer-nav-link">Services</a>
+                        <a href="#/process" class="footer-nav-link">Process</a>
+                        <a href="#/contact" class="footer-nav-link">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </template>
+
+    <script src="./js/router.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

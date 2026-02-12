@@ -1,0 +1,57 @@
+📁 COMPLETE FILE STRUCTURE
+
+static-site/                           # Root folder - upload everything inside to GitHub
+│
+├── index.html                         # Main website file (contains all pages)
+│
+├── css/
+│   └── styles.css                     # All website styling (compiled from Tailwind)
+│
+├── js/
+│   ├── router.js                      # Handles page navigation without reloads
+│   └── main.js                        # Mobile menu and scroll effects
+│
+├── assets/
+│   ├── images/                        # All image files
+│   │   ├── segu.jpg                   ✅ Company logo (nav & footer)
+│   │   ├── back.jpg                   ✅ Hero background image
+│   │   ├── branding1.PNG              ✅ Branding solutions showcase
+│   │   ├── graphic.PNG                ✅ Graphic design showcase
+│   │   ├── logo-placeholder.png       ⚠️ REPLACE WITH YOUR LOGO
+│   │   └── README-IMAGES.txt          📄 Instructions for images
+│   │
+│   └── videos/                        # Video files
+│       ├── segulavid.mp4              ⚠️ ADD YOUR 45-SECOND VIDEO HERE
+│       └── README-VIDEO.txt           📄 Instructions for video
+│
+├── START-HERE.md                      📄 Quick start guide (READ THIS FIRST!)
+├── DEPLOYMENT-GUIDE.md                📄 Step-by-step GitHub Pages deployment
+├── README.md                          📄 Complete technical documentation
+└── FILE-STRUCTURE.txt                 📄 This file
+
+---
+
+WHAT TO DO BEFORE DEPLOYING:
+
+1. ⚠️ ADD YOUR LOGO
+   Location: assets/images/logo-placeholder.png
+   Size: 300x200px recommended
+   Format: PNG or JPG
+
+2. ⚠️ ADD YOUR VIDEO
+   Location: assets/videos/segulavid.mp4
+   Duration: 45 seconds
+   Format: MP4 (H.264 codec)
+
+3. ✅ All other images are already in place
+
+4. ✅ Read START-HERE.md for quick start
+
+5. ✅ Follow DEPLOYMENT-GUIDE.md to deploy
+
+---
+
+UPLOAD TO GITHUB:
+Upload the ENTIRE contents of the static-site/ folder to your GitHub repository.
+
+Make sure to maintain this exact folder structure!

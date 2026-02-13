@@ -5,13 +5,14 @@ import Footer from '../components/Footer';
 const HomePage = () => {
   return (
     <>
-      <section className="min-h-screen bg-black flex items-center justify-center relative overflow-hidden">
+      <section className="bg-black relative overflow-hidden pb-0">
         <div
-          className="absolute inset-0"
+          className="absolute inset-0 min-h-full"
           style={{
             backgroundImage: `url('/back.jpg')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
+            height: '100%',
           }}
         ></div>
         <div className="absolute inset-0 bg-gradient-to-br from-black/90 via-black/80 to-black/90"></div>
@@ -21,7 +22,7 @@ const HomePage = () => {
           <div className="absolute bottom-20 right-20 w-96 h-96 bg-orange-500 rounded-full blur-3xl"></div>
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center min-h-screen flex items-center justify-center py-20">
           <div className="space-y-8 animate-fade-in">
             <div className="inline-block">
               <div className="h-1 w-20 bg-orange-500 mb-6 mx-auto"></div>
@@ -32,14 +33,6 @@ const HomePage = () => {
               <br />
               <span className="text-white">PROJECTS & DESIGNS</span>
             </h1>
-               <div className="relative animate-slide-in-right">
-              <img
-                src="/segu.jpg"
-                alt="Modern office workspace"
-                className="aspect-square w-full object-cover rounded-lg"
-              />
-              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-orange-500 opacity-20 rounded-lg -z-10"></div>
-            </div>
             <p className="text-xl sm:text-2xl md:text-3xl text-gray-300 font-light max-w-4xl mx-auto">
               Strategic Branding, Signage & Visual Communication
             </p>
@@ -59,6 +52,12 @@ const HomePage = () => {
                   size={20}
                   className="group-hover:translate-x-1 transition-transform"
                 />
+              </Link>
+              <Link
+                to="/gallery"
+                className="px-8 py-4 bg-orange-500 text-white font-medium rounded-none hover:bg-orange-600 transition-all duration-300"
+              >
+                View Gallery
               </Link>
               <Link
                 to="/contact"

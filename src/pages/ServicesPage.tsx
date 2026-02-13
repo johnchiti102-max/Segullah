@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import {
   Globe,
   Palette,
@@ -103,14 +102,6 @@ const ServicesPage = () => {
               Comprehensive branding and visual communication solutions tailored
               to your business needs
             </p>
-            <div className="mt-10 flex justify-center">
-              <Link
-                to="/gallery"
-                className="inline-flex items-center px-8 py-3 bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600 transition-all duration-300 hover:shadow-lg hover:shadow-orange-500/50"
-              >
-                View Gallery
-              </Link>
-            </div>
           </div>
 
           <div className="space-y-20">

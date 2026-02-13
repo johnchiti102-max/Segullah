@@ -1,19 +1,11 @@
  import { Link } from 'react-router-dom';
-import { Facebook, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
   return (
     <footer className="bg-black border-t border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid md:grid-cols-2 gap-12 mb-12">
-          <div>
-            <img
-              src="/segu.jpg"
-              alt="Segullah Projects & Designs Logo"
-              className="w-full max-w-sm rounded-lg"
-            />
-          </div>
-          <div className="flex flex-col justify-center">
+        <div className="mb-12">
+          <div className="flex flex-col justify-center max-w-4xl mx-auto">
             <div className="space-y-4">
               <h3 className="text-2xl font-bold text-white">Segullah Projects & Designs</h3>
               <p className="text-gray-400 leading-relaxed">
@@ -42,7 +34,7 @@ const Footer = () => {
 
               <div className="pt-6">
                 <h3 className="text-xl font-bold text-white mb-4">Connect With Us</h3>
-                <div className="flex space-x-4">
+                <div className="flex items-center space-x-4">
 
                   {/* Facebook */}
                   <a
@@ -78,6 +70,13 @@ const Footer = () => {
                     />
                   </a>
 
+                  {/* Segullah Logo */}
+                  <img
+                    src="/segu.jpg"
+                    alt="Segullah Logo"
+                    className="w-12 h-12 rounded-full object-cover"
+                  />
+
                 </div>
               </div>
 
@@ -104,9 +103,6 @@ const Footer = () => {
               </Link>
               <Link to="/services" className="text-gray-400 hover:text-orange-500 transition-colors text-sm">
                 Services
-              </Link>
-              <Link to="/process" className="text-gray-400 hover:text-orange-500 transition-colors text-sm">
-                Process
               </Link>
               <Link to="/contact" className="text-gray-400 hover:text-orange-500 transition-colors text-sm">
                 Contact

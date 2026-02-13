@@ -1,16 +1,12 @@
-import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
 
 const Navigation = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
 
   const navItems = [
     { path: '/', label: 'Home' },
     { path: '/about', label: 'About' },
     { path: '/services', label: 'Services' },
-    { path: '/process', label: 'Process' },
     { path: '/contact', label: 'Contact' },
   ];
 
@@ -41,12 +37,12 @@ const Navigation = () => {
             </div>
           </Link>
 
-          <div className="hidden md:flex space-x-8">
+          <div className="flex space-x-2 sm:space-x-4 md:space-x-8">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
-                className={`text-sm font-medium transition-colors duration-200 hover:text-orange-500 ${
+                className={`text-xs sm:text-sm font-medium transition-colors duration-200 hover:text-orange-500 ${
                   location.pathname === item.path ? 'text-orange-500' : 'text-white'
                 }`}
               >
@@ -54,36 +50,8 @@ const Navigation = () => {
               </Link>
             ))}
           </div>
-
-          <button
-            className="md:hidden text-white"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
         </div>
       </div>
-
-      {isMobileMenuOpen && (
-        <div className="md:hidden bg-black border-t border-gray-800">
-          <div className="px-4 py-4 space-y-3">
-            {navItems.map((item) => (
-              <Link
-                key={item.path}
-                to={item.path}
-                onClick={() => setIsMobileMenuOpen(false)}
-                className={`block w-full text-left px-4 py-2 text-sm font-medium transition-colors duration-200 ${
-                  location.pathname === item.path
-                    ? 'text-orange-500 bg-gray-900'
-                    : 'text-white hover:text-orange-500 hover:bg-gray-900'
-                }`}
-              >
-                {item.label}
-              </Link>
-            ))}
-          </div>
-        </div>
-      )}
     </nav>
   );
 };

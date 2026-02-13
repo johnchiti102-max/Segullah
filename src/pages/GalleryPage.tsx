@@ -5,28 +5,7 @@ const GalleryPage = () => {
   const [activeImage, setActiveImage] = useState<string | null>(null);
 
   const galleryCategories = [
-    {
-      category: 'Web & Digital Development',
-      services: [
-        {
-          title: 'Web Development',
-          images: ['/branding1.PNG'],
-        },
-         
-        {
-          title: 'Informational Websites',
-          images: ['/branding1.PNG'],
-        },
-        {
-          title: 'E-commerce Websites',
-          images: ['/branding1.PNG'],
-        },
-        {
-          title: 'App Development',
-          images: ['/branding1.PNG'],
-        },
-      ],
-    },
+  
     {
       category: 'Advertising & Printing',
       services: [

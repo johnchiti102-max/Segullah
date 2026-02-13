@@ -34,7 +34,7 @@ const HomePage = () => {
               <span className="text-white">PROJECTS & DESIGNS</span>
             </h1>
             <p className="text-xl sm:text-2xl md:text-3xl text-gray-300 font-light max-w-4xl mx-auto">
-              Strategic Branding, Signage & Visual Communication
+              Capturing ideas building brands
             </p>
 
             <p className="text-base sm:text-lg text-gray-400 max-w-3xl mx-auto leading-relaxed">

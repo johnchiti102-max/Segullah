@@ -48,7 +48,7 @@ const GalleryPage = () => {
         },
          {
           title: 'Customised Calendars',
-          images: ['/customised calenders.jpg', '/customised calenders.jpg'],
+          images: ['/customised calendars.jpg', '/customised calendars1.jpg'],
         },
         {
           title: 'Customised Coffee Mugs',
@@ -60,7 +60,7 @@ const GalleryPage = () => {
         },
          {
           title: 'Customised google frames',
-          images: ['/Customised Coffee Mugs.jpg'],
+          images: ['/Customised Google frames.jpg'],
         },
           {
           title: 'Customised Key Holders',

@@ -74,11 +74,7 @@ const GalleryPage = () => {
           title: 'Customised Water Bottles',
           images: ['/Customised water bottles.jpg','/Customised water bottles1.jpg','/Customised water bottles2.jpg'],
         },
-          {
-          title: 'Customised google frames',
-          images: ['/Customised Coffee Mugs.jpg'],
-        },
-         
+        
          {
           title: 'Mats',
           images: ['/mats.jpg'],

@@ -72,7 +72,7 @@ const Footer = () => {
 
                   {/* Segullah Logo */}
                   <img
-                    src="/segu.jpg"
+                    src="/segullah.png"
                     alt="Segullah Logo"
                     className="w-12 h-12 rounded-full object-cover"
                   />

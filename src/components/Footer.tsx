@@ -74,7 +74,7 @@ const Footer = () => {
                   <img
                     src="/segullah.png"
                     alt="Segullah Logo"
-                    className="w-15 h-15 rounded-full object-cover"
+                    className="w-5 h-5 rounded-full object-cover"
                   />
 
                 </div>

@@ -1,4 +1,4 @@
-const Logo = ({ size = 48 }: { size?: number }) => {
+const Logo = ({ size = 100 }: { size?: number }) => {
   return (
     <svg
       viewBox="0 0 200 200"

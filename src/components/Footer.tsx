@@ -1,4 +1,4 @@
- import { Link } from 'react-router-dom';
+  import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -34,54 +34,47 @@ const Footer = () => {
 
               <div className="pt-6">
                 <h3 className="text-xl font-bold text-white mb-4">Connect With Us</h3>
+                <div className="flex items-center space-x-4">
 
-                {/* 🔥 NEW LAYOUT — ICONS LEFT, LOGO FAR RIGHT */}
-                <div className="flex items-center justify-between w-full">
+                  {/* Facebook */}
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61582498389272"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-12 h-12 bg-white rounded-full flex items-center justify-center
+                               border border-gray-300 hover:bg-gray-100
+                               transition-all duration-300 group"
+                    aria-label="Visit our Facebook page"
+                  >
+                    <img
+                      src="/facebook1.png"
+                      alt="Facebook"
+                      className="w-9 h-9 group-hover:scale-110 transition-transform"
+                    />
+                  </a>
 
-                  {/* LEFT SIDE — Facebook & WhatsApp */}
-                  <div className="flex items-center space-x-4">
+                  {/* WhatsApp */}
+                  <a
+                    href="https://wa.me/27662222656"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-12 h-12 bg-white rounded-full flex items-center justify-center
+                               border border-gray-300 hover:bg-gray-100
+                               transition-all duration-300 group"
+                    aria-label="Chat with us on WhatsApp"
+                  >
+                    <img
+                      src="/whatsapp1.png"
+                      alt="WhatsApp"
+                      className="w-9 h-9 group-hover:scale-110 transition-transform"
+                    />
+                  </a>
 
-                    {/* Facebook */}
-                    <a
-                      href="https://www.facebook.com/profile.php?id=61582498389272"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-12 h-12 bg-white rounded-full flex items-center justify-center
-                                 border border-gray-300 hover:bg-gray-100
-                                 transition-all duration-300 group"
-                      aria-label="Visit our Facebook page"
-                    >
-                      <img
-                        src="/facebook1.png"
-                        alt="Facebook"
-                        className="w-9 h-9 group-hover:scale-110 transition-transform"
-                      />
-                    </a>
-
-                    {/* WhatsApp */}
-                    <a
-                      href="https://wa.me/27662222656"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-12 h-12 bg-white rounded-full flex items-center justify-center
-                                 border border-gray-300 hover:bg-gray-100
-                                 transition-all duration-300 group"
-                      aria-label="Chat with us on WhatsApp"
-                    >
-                      <img
-                        src="/whatsapp1.png"
-                        alt="WhatsApp"
-                        className="w-9 h-9 group-hover:scale-110 transition-transform"
-                      />
-                    </a>
-
-                  </div>
-
-                  {/* ⭐ FAR RIGHT — BIG SEGULLAH LOGO */}
+                  {/* Segullah Logo */}
                   <img
                     src="/segullah.png"
                     alt="Segullah Logo"
-                    className="w-40 h-40 object-contain"
+                    className="w-10 h-10 rounded-full object-cover"
                   />
 
                 </div>

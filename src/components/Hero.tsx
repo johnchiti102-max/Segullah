@@ -15,7 +15,7 @@ const Hero = () => {
       style={{
         backgroundImage: `url('https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1600')`,
         backgroundSize: 'cover',
-        backgroundPosition: 'left',
+        backgroundPosition: 'center',
       }}
     >
       <div className="absolute inset-0 bg-gradient-to-br from-black/90 via-black/80 to-black/90"></div>

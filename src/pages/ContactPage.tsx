@@ -80,7 +80,7 @@ const ContactPage = () => {
 
               <div className="pt-8">
                 <img
-                  src="/segu.jpg"
+                  src="/segullah.png"
                   alt="Segullah Logo"
                   className="w-full max-w-sm rounded-lg"
                 />

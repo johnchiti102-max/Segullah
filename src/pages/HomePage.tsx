@@ -69,7 +69,7 @@ const HomePage = () => {
                 to="/store"
                 className="px-8 py-4 bg-orange-500 text-white font-medium rounded-none hover:bg-orange-600 transition-all duration-300"
               >
-                Shop Now
+                payments
               </Link>
             </div>
           </div>

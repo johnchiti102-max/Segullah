@@ -1,7 +1,10 @@
 import { Link, useLocation } from 'react-router-dom';
+import { ShoppingCart } from 'lucide-react';
+import { useCart } from '../hooks/useCart';
 
 const Navigation = () => {
   const location = useLocation();
+  const { items } = useCart();
 
   const navItems = [
     { path: '/', label: 'Home' },
@@ -37,7 +40,7 @@ const Navigation = () => {
             </div>
           </Link>
 
-          <div className="flex space-x-2 sm:space-x-4 md:space-x-8">
+          <div className="flex space-x-2 sm:space-x-4 md:space-x-8 items-center">
             {navItems.map((item) => (
               <Link
                 key={item.path}
@@ -49,6 +52,18 @@ const Navigation = () => {
                 {item.label}
               </Link>
             ))}
+            <Link
+              to="/cart"
+              className="relative text-white hover:text-orange-500 transition-colors duration-200"
+              aria-label="Shopping cart"
+            >
+              <ShoppingCart size={20} />
+              {items.length > 0 && (
+                <span className="absolute -top-2 -right-2 bg-orange-500 text-white text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center">
+                  {items.length}
+                </span>
+              )}
+            </Link>
           </div>
         </div>
       </div>

@@ -42,7 +42,7 @@ const HomePage = () => {
               communication systems that elevate business visibility.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8 flex-wrap">
               <Link
                 to="/services"
                 className="group px-8 py-4 bg-orange-500 text-white font-medium rounded-none hover:bg-orange-600 transition-all duration-300 flex items-center justify-center space-x-2"
@@ -64,6 +64,12 @@ const HomePage = () => {
                 className="px-8 py-4 border-2 border-orange-500 text-orange-500 font-medium rounded-none hover:bg-orange-500 hover:text-white transition-all duration-300"
               >
                 Get a Quote
+              </Link>
+              <Link
+                to="/store"
+                className="px-8 py-4 bg-orange-500 text-white font-medium rounded-none hover:bg-orange-600 transition-all duration-300"
+              >
+                Shop Now
               </Link>
             </div>
           </div>
